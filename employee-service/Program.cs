@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.AddHealthActuator();
 builder.Host.AddInfoActuator();
 builder.Host.AddLoggersActuator();
+// builder.WebHost.AddAllActuators();
 
 // Add Steeltoe dynamic logging.
 builder.Host.AddDynamicLogging();
